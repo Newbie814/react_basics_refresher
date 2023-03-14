@@ -1,6 +1,6 @@
 import React from 'react';
 
-const Book = ({ author, title, img, getBook, id }) => {
+const Book = ({ author, title, img, getBook, id, ranking }) => {
   // console.log(props);
   const clickHandler = () => {
     getBook(id);
@@ -11,6 +11,7 @@ const Book = ({ author, title, img, getBook, id }) => {
       <h2>{title}</h2>
       <button onClick={clickHandler}>click me</button>
       <h2>{author}</h2>
+      <span className='number'>{ranking}</span>
     </article>
   );
 };
