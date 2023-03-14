@@ -11,7 +11,7 @@ const Book = ({ author, title, img, getBook, id, ranking }) => {
       <h2>{title}</h2>
       <button onClick={clickHandler}>click me</button>
       <h2>{author}</h2>
-      <span className='number'>{ranking}</span>
+      <span className='number'>{`# ${ranking}`}</span>
     </article>
   );
 };
